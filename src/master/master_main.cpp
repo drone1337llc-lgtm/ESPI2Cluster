@@ -81,6 +81,38 @@ bool checkWorkerHealth(uint8_t channel);
 bool recoverWorker(uint8_t channel);
 void scheduleNextJob();
 void processJobAssignment();
+void formatHashrate(float hashrate, char *buffer, size_t bufferSize);
+
+// ============================================================================
+// FORMAT HASHRATE (User-friendly units)
+// ============================================================================
+void formatHashrate(float hashrate, char *buffer, size_t bufferSize)
+{
+    const char *units[] = {"H/s", "KH/s", "MH/s", "GH/s", "TH/s"};
+    int unitIndex = 0;
+    float value = hashrate;
+
+    // Scale to appropriate unit
+    while (value >= 1000.0f && unitIndex < 4)
+    {
+        value /= 1000.0f;
+        unitIndex++;
+    }
+
+    // Format with appropriate precision
+    if (value >= 100.0f)
+    {
+        snprintf(buffer, bufferSize, "%.1f %s", value, units[unitIndex]);
+    }
+    else if (value >= 10.0f)
+    {
+        snprintf(buffer, bufferSize, "%.2f %s", value, units[unitIndex]);
+    }
+    else
+    {
+        snprintf(buffer, bufferSize, "%.3f %s", value, units[unitIndex]);
+    }
+}
 
 // ============================================================================
 // SETUP
@@ -167,7 +199,7 @@ void scanI2CBus()
 
                 if (count > 0)
                 {
-                    DEBUG_PRINTF("Channel %d: %d device(s)\n", ch, count);
+                    //DEBUG_PRINTF("Channel %d: %d device(s)\n", ch, count);
                 }
             }
         }
@@ -198,7 +230,7 @@ bool recoverWorker(uint8_t channel)
 {
     if (g_workers[channel].recovery_attempts >= WORKER_RECOVERY_ATTEMPTS)
     {
-        DEBUG_PRINTF("Worker %d: Max recovery attempts reached\n", channel);
+        //DEBUG_PRINTF("Worker %d: Max recovery attempts reached\n", channel);
         return false;
     }
 
@@ -209,8 +241,8 @@ bool recoverWorker(uint8_t channel)
     g_workers[channel].last_recovery_attempt = now;
     g_workers[channel].recovery_attempts++;
 
-    DEBUG_PRINTF("Worker %d: Recovery attempt %d/%d\n",
-                 channel, g_workers[channel].recovery_attempts, WORKER_RECOVERY_ATTEMPTS);
+    //DEBUG_PRINTF("Worker %d: Recovery attempt %d/%d\n",
+                 //channel, g_workers[channel].recovery_attempts, WORKER_RECOVERY_ATTEMPTS);
 
     // Reset I2C channel
     g_i2c_mux.deselectChannel(channel);
@@ -236,7 +268,7 @@ bool recoverWorker(uint8_t channel)
     {
         g_workers[channel].pending_config = true;
         g_workers[channel].config_time = now;
-        DEBUG_PRINTF("Worker %d: Recovery config sent\n", channel);
+        //DEBUG_PRINTF("Worker %d: Recovery config sent\n", channel);
         return true;
     }
 
@@ -286,7 +318,7 @@ void processJobAssignment()
 #if WORKER_HEALTH_CHECK_BEFORE_JOB
     if (!checkWorkerHealth(worker))
     {
-        DEBUG_PRINTF("Worker %d: Health check failed, attempting recovery\n", worker);
+        //DEBUG_PRINTF("Worker %d: Health check failed, attempting recovery\n", worker);
 
         if (!recoverWorker(worker))
         {
@@ -294,7 +326,7 @@ void processJobAssignment()
             g_workers[worker].active = false;
             g_workers[worker].id = 0xFF;
             g_active_worker_count--;
-            DEBUG_PRINTF("Worker %d: Marked inactive\n", worker);
+            //DEBUG_PRINTF("Worker %d: Marked inactive\n", worker);
         }
 
         g_job_pending = false;
@@ -308,14 +340,14 @@ void processJobAssignment()
     {
         g_last_job_time = now;
         g_job_pending = false;
-        DEBUG_PRINTF("Job %d sent to Worker %d\n", g_job_id, worker);
+        //DEBUG_PRINTF("Job %d sent to Worker %d\n", g_job_id, worker);
 
         // Schedule next worker
         scheduleNextJob();
     }
     else
     {
-        DEBUG_PRINTF("Worker %d: Job send failed\n", worker);
+        //DEBUG_PRINTF("Worker %d: Job send failed\n", worker);
         g_job_pending = false;
         scheduleNextJob();
     }
@@ -368,8 +400,8 @@ void loop()
     // Process staggered job assignments
     processJobAssignment();
 
-    // Status print
-    if (now - last_status >= 10000)
+    // Status print - NOW EVERY 1 SECOND (was 10 seconds)
+    if (now - last_status >= 1000)
     {
         last_status = now;
         printStatus();
@@ -562,7 +594,7 @@ void processWorkerData(uint8_t channel)
             g_workers[slot].recovery_attempts = 0;
             g_workers[slot].needs_health_check = false;
             g_active_worker_count++;
-            DEBUG_PRINTF("Worker %d connected\n", slot);
+            //DEBUG_PRINTF("Worker %d connected\n", slot);
         }
     }
     else if (cmd == CMD_RESULT && len >= SIZE_RESULT && validatePacketCRC(g_rx_buffer, len))
@@ -659,8 +691,8 @@ void cleanupStaleWorkers()
             }
             else
             {
-                DEBUG_PRINTF("Worker %d: Timeout after %d recovery attempts\n",
-                             i, g_workers[i].recovery_attempts);
+                //DEBUG_PRINTF("Worker %d: Timeout after %d recovery attempts\n",
+                             //i, g_workers[i].recovery_attempts);
                 g_workers[i].active = false;
                 g_workers[i].id = 0xFF;
                 g_active_worker_count--;
@@ -730,23 +762,13 @@ int findWorkerSlot()
 // ============================================================================
 void printStatus()
 {
-    DEBUG_PRINTF("Workers: %d/%d, Hashrate: %.1f H/s, Shares: %d/%d, Job Delay: %dms\n",
-                 g_active_worker_count, MAX_WORKERS,
-                 calculateTotalHashrate(), g_total_accepted, g_total_submitted,
-                 JOB_ASSIGNMENT_DELAY_MS);
+    char hashrateStr[32];
+    formatHashrate(calculateTotalHashrate(), hashrateStr, sizeof(hashrateStr));
 
-    // Print individual worker status
-    for (uint8_t i = 0; i < MAX_WORKERS; i++)
-    {
-        if (g_workers[i].active)
-        {
-            DEBUG_PRINTF("  W%d: %.1f H/s, %d/%d shares, %d recovery attempts\n",
-                         i, g_workers[i].hashrate,
-                         g_workers[i].shares_accepted,
-                         g_workers[i].shares_submitted,
-                         g_workers[i].recovery_attempts);
-        }
-    }
+    DEBUG_PRINTF("Workers: %d/%d, Hashrate: %s, Shares: %d/%d, Job Delay: %dms\n",
+                 g_active_worker_count, MAX_WORKERS,
+                 hashrateStr, g_total_accepted, g_total_submitted,
+                 JOB_ASSIGNMENT_DELAY_MS);
 }
 
 #endif // MASTER_DEVICE
