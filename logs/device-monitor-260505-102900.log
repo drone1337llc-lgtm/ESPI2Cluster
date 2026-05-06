@@ -1,0 +1,718 @@
+[  2335][E][esp32-hal-adc.c:158] __analogReadRaw(): Pin 0 is not ADC pin!
+========================================
+ESP32 MINING MASTER
+========================================
+Max Workers: 8
+I2C Speed: 400000 Hz
+[  2342][I][esp32-hal-i2c.c:75] i2cInit(): Initialising I2C Master: sda=8 scl=9 freq=400000
+[I2C] Mux initialized
+[LED] NeoPixel initialized
+READY - Waiting for workers...
+========================================
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+[ 77156][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77175][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77194][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77213][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77232][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77251][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77270][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77289][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77308][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77327][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77346][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77365][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77384][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77403][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77422][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77441][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77460][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77479][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77498][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77517][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77536][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77555][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77574][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77593][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77612][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77631][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77650][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77669][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77688][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77707][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77726][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77745][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77764][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77783][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77802][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77821][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77840][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77859][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77878][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77897][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77916][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77935][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77954][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77973][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 77992][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78011][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78030][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78049][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78068][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78087][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78106][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78125][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78144][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78163][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78182][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78201][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78220][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78239][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78258][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78277][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78296][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78315][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78334][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78353][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78372][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78391][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78410][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78429][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78448][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78467][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78486][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78505][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78524][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78543][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78562][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78581][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78600][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78619][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78638][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78657][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78676][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78695][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78714][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78733][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78752][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78771][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78790][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78809][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78828][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78847][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78866][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78885][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78904][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78923][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78942][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78961][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78980][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 78999][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79018][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79037][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79056][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79075][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79092][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79098][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79104][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79110][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79117][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79123][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79129][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79146][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79152][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79158][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79165][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79171][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79177][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79183][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79201][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79207][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79214][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79220][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79226][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79232][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79239][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79256][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79262][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79268][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79274][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79281][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79287][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79293][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79310][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79316][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79322][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79328][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79335][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79341][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79347][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79364][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79370][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79376][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79383][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79389][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79395][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 79401][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 0 failed: 5
+[ 80419][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 80425][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 80432][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 80438][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 80444][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 80450][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 80456][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 7 failed: 2
+[ 80463][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 0 failed: 2
+[ 80479][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 1 failed: 2
+[ 80485][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 2 failed: 2
+[ 80491][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 3 failed: 2
+[ 80498][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 4 failed: 2
+[ 80504][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 81511][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 81517][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+[ 81535][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 81541][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 81547][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 3 failed: 2
+[ 81554][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 4 failed: 2
+[ 81560][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 5 failed: 2
+[ 81567][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 6 failed: 2
+[ 81573][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 7 failed: 2
+[ 81579][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 0 failed: 2
+[ 81596][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 82603][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 82609][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 82615][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 82622][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 82628][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 82634][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 0 failed: 2
+[ 82651][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 1 failed: 2
+[ 82657][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 2 failed: 2
+[ 82664][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 3 failed: 2
+[ 82670][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 4 failed: 2
+[ 82676][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 5 failed: 2
+[ 82683][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 6 failed: 2
+[ 82689][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 83707][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 83713][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 83720][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 83726][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 83732][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 5 failed: 2
+[ 83738][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 6 failed: 2
+[ 83745][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 7 failed: 2
+[ 83751][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 0 failed: 2
+[ 83768][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 1 failed: 2
+[ 83775][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 2 failed: 2
+[ 83781][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 3 failed: 2
+[ 83787][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 84794][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 84800][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 84806][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 84823][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 84829][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 2 failed: 2
+[ 84835][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 3 failed: 2
+[ 84842][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 4 failed: 2
+[ 84848][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 5 failed: 2
+[ 84854][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 6 failed: 2
+[ 84861][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 7 failed: 2
+[ 84867][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 0 failed: 2
+[ 84884][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 85891][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 85897][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 85903][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 85910][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 85916][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 85922][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 0 failed: 2
+[ 85939][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 1 failed: 2
+[ 85945][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 2 failed: 2
+[ 85952][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 3 failed: 2
+[ 85958][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 4 failed: 2
+[ 85964][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 5 failed: 2
+[ 85971][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 6 failed: 2
+[ 85977][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 86995][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87001][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87008][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87014][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87020][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87026][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87033][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87050][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87056][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87063][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87069][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87075][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87081][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87088][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87105][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87111][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87117][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87123][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87130][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87136][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87142][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87159][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87165][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87171][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87177][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87184][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87190][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87196][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87213][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87219][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87225][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87232][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87238][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87244][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87250][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87268][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87274][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87281][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87287][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87293][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87299][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87306][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87323][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87329][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87335][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87341][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87348][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87354][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87360][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87377][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87383][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87389][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87396][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87402][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87408][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87414][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87431][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87437][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87443][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87450][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87456][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87462][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87468][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87486][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87492][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87499][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87505][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87511][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87517][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87524][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87541][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87547][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87553][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87559][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87566][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87572][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87578][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87595][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87601][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87607][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87614][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87620][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87626][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87632][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87649][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87655][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87661][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87667][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87674][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87680][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87686][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87704][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87710][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87717][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87723][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87729][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87735][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87742][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87759][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87765][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87771][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87778][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87784][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87790][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87796][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87813][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87819][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87825][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87831][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87838][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87844][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87850][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87867][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87873][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87879][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87885][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87892][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87898][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87904][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87922][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87928][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87935][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87941][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87947][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87953][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87960][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87977][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87983][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87989][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 87995][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88002][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88008][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88014][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88031][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88037][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88043][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88049][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88056][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88062][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88068][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88085][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88091][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88097][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88103][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88110][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88116][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88122][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88140][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88146][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88153][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88159][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88165][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88172][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88178][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88195][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88201][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88207][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88213][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88220][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88226][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88232][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88249][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88255][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88261][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88267][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88274][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88280][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88286][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88303][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88309][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88315][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88322][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88328][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88334][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88340][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88358][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88364][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88371][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88377][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88383][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88389][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88396][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88413][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88419][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88425][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88431][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88438][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88444][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88450][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88467][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88473][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88479][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88486][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88492][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88498][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88504][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88521][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88527][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88533][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88540][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88546][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88552][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88558][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88576][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88582][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88589][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88595][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88601][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88607][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88614][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88631][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88637][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88643][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88649][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88656][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88662][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88668][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88685][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88691][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88697][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88704][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88710][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88716][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88722][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88739][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88745][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88751][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88757][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88764][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88770][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88776][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88794][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88800][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88807][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88813][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88819][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88825][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88832][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88849][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88855][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88861][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88868][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88874][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88880][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88886][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88903][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88909][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88915][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88921][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 88928][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+[185810][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185816][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185822][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185829][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185835][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185841][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185847][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185864][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185870][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185876][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185883][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185889][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185895][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185901][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185918][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185924][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185930][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185936][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185943][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185949][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185955][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185973][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185979][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185986][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185992][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[185998][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[186004][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[186011][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[186028][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[186034][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[186040][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[186047][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[186053][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[186059][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[186065][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 0 failed: 5
+[187082][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[187088][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[187094][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[187101][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[187107][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[187113][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[187119][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 0 failed: 2
+[187136][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 1 failed: 2
+[187142][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 2 failed: 2
+[187149][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 3 failed: 2
+[187155][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 4 failed: 2
+[187161][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 5 failed: 2
+[187168][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 6 failed: 2
+[187174][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 7 failed: 2
+[187180][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 0 failed: 5
+[188198][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[188204][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[188211][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[188217][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[188223][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[188229][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[188235][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 0 failed: 2
+[188252][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 1 failed: 2
+[188258][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 2 failed: 2
+[188265][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 3 failed: 2
+[188271][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 4 failed: 2
+[188277][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 5 failed: 2
+[188284][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 6 failed: 2
+[188290][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 7 failed: 2
+[188296][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 0 failed: 5
+[189314][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[189320][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[189326][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[189333][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[189339][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[189345][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[189351][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 0 failed: 2
+[189368][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 1 failed: 2
+[189374][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 2 failed: 2
+[189381][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 3 failed: 2
+[189387][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 4 failed: 2
+[189393][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 5 failed: 2
+[189400][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 6 failed: 2
+[189406][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 7 failed: 2
+[189412][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 0 failed: 5
+[190430][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[190436][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[190442][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[190449][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[190455][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[190461][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[190467][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 0 failed: 2
+[190484][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 1 failed: 2
+[190490][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 2 failed: 2
+[190497][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 3 failed: 2
+[190503][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 4 failed: 2
+[190509][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 5 failed: 2
+[190516][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 6 failed: 2
+[190522][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 7 failed: 2
+[190528][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 0 failed: 5
+[191546][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[191552][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[191558][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[191565][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[191571][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[191577][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[191583][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 0 failed: 2
+[191600][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 1 failed: 2
+[191606][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 2 failed: 2
+[191613][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 3 failed: 2
+[191619][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 4 failed: 2
+[191625][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 5 failed: 2
+[191632][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 6 failed: 2
+[191638][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 7 failed: 2
+[191644][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+[I2C] Mux select channel 0 failed: 5
+[192662][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[192668][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[192674][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[192681][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[192687][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[192693][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[192699][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 0 failed: 2
+[192716][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 1 failed: 2
+[192722][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 2 failed: 2
+[192728][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 3 failed: 2
+[192735][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 4 failed: 2
+[192741][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 5 failed: 2
+[192748][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 6 failed: 2
+[192754][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Mux select channel 7 failed: 2
+[192760][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1

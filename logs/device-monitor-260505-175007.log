@@ -1,0 +1,163 @@
+[0;32m[   407][I][esp32-hal-psram.c:96] psramInit(): PSRAM enabled[0m
+[0;32m[  2429][I][esp32-hal-i2c.c:75] i2cInit(): Initialising I2C Master: sda=8 scl=9 freq=400000[0m
+[0;33m[  2459][W][Wire.cpp:301] begin(): Bus already started in Master Mode.[0m
+[0;33m[  4155][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[  5180][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[  6209][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[  7232][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[  8255][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[  9290][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 10359][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 11379][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 12431][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 13473][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 14498][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 15519][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 16542][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 17570][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 18594][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 19616][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 20642][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 21674][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 22704][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 23754][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 24779][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 25802][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 26830][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 27859][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 28888][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 29908][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 30931][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 31955][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 32984][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 34006][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 35030][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 36051][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 37074][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 38099][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 39124][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 40147][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 41176][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 42201][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 43235][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 44263][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 45291][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 46343][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 47366][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 48394][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 49418][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 50439][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 51463][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 52509][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 53562][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 54588][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 55617][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 56642][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 57666][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 58691][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 59733][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 60781][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 61808][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 62831][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 63856][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 64877][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 65901][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 66930][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 67952][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 68976][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 70004][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 71024][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 72050][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 73072][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 74142][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 75166][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 76190][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 77214][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 78240][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 79272][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 80314][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 81368][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 82428][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 83452][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 84485][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 85510][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 86537][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 87565][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 88591][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 89613][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 90638][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 91662][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 92686][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 93712][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 94732][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 95758][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 96790][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 97820][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 98876][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[ 99898][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[100920][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[101944][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[102969][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[103997][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[105058][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[106081][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[107116][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[108157][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[109186][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[110237][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[111275][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[112337][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[113365][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[114390][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[115433][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[116483][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[117508][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[118530][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[119598][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[120622][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[121658][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[122690][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[123711][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[124738][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[125764][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[126789][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[127824][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[128879][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[129901][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[130924][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[131950][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[133012][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[134036][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[135060][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[136084][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[137108][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[138132][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[139156][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[140188][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[141212][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[142239][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[143260][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[144287][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[145315][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[146341][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[147365][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[148392][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[149414][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[150438][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[151469][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[152529][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[153551][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[154575][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[155599][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[156624][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[157661][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[158734][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[159762][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[160821][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[161845][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[162877][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[163914][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[164961][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[165984][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[167008][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m
+[0;33m[168032][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 2 - AUTH_EXPIRE[0m

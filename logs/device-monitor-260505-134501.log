@@ -1,0 +1,884 @@
+========================================
+ESP32 MINING WORKER - DEBUG MODE
+========================================
+I2C Address: 0x20
+[  2332][I][esp32-hal-i2c-slave.c:234] i2cSlaveInit(): Initialising I2C Slave: sda=8 scl=9 freq=100000, addr=0x20
+[I2C] Slave mode initialized
+[I2C] Waiting for master requests...
+[LED] NeoPixel initialized
+[WORKER] Hello prepared (attempt 1)
+[  2641][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  2649][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  2657][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  2666][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  2674][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  2682][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  2691][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #1)
+[I2C] RX: Invalid length 112
+[  3169][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  3177][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  3185][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  3194][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  3202][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  3210][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  3219][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[  3697][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  3705][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  3713][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  3722][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  3730][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  3738][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  3747][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[  4225][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  4233][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  4241][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  4250][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  4258][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  4266][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  4275][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 2)
+[  4753][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  4761][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  4769][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  4778][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  4786][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  4794][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  4803][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #5)
+[I2C] RX: Invalid length 112
+
+[STATS] Requests: 5, Receives: 5, Registered: NO, ID: 255
+[  5281][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  5289][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  5297][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  5306][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  5314][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  5322][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  5331][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[  5809][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  5817][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  5825][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  5834][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  5842][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  5850][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  5859][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  6337][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  6345][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  6353][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 3)
+[  6362][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  6370][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  6378][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  6387][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #8)
+[I2C] RX: Invalid length 112
+[  6865][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  6873][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  6881][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  6890][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  6898][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  6906][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  6915][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[  7393][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  7401][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  7409][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  7418][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  7426][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  7434][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  7443][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[  7921][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  7929][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  7937][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  7946][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  7954][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  7962][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  7971][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 4)
+[  8449][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  8457][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  8465][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  8474][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  8482][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  8490][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  8499][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #12)
+[I2C] RX: Invalid length 112
+[  8977][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  8985][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  8993][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  9002][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  9010][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  9018][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  9027][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[  9602][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  9610][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  9618][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  9627][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  9635][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  9643][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[  9652][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+
+[STATS] Requests: 14, Receives: 14, Registered: NO, ID: 255
+[ 10130][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 10138][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 10146][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 10155][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 10163][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 10171][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 10180][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 5)
+[ 10658][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 10666][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 10674][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 10683][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 10691][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 10699][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 10708][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #16)
+[I2C] RX: Invalid length 112
+[ 11186][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 11194][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 11202][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 11211][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 11219][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 11227][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 11236][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 11714][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 11722][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 11730][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 11739][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 11747][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 11755][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 11764][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 12242][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 12250][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 12258][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 12267][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 12275][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 12283][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 12292][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 6)
+[ 12770][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 12778][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 12786][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 12795][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 12803][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 12811][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 12820][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #20)
+[I2C] RX: Invalid length 112
+[ 13298][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 13306][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 13314][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 13323][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 13331][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 13339][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 13348][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 13826][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 13834][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 13842][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 13851][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 13859][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 13867][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 13876][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 14354][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 14362][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 14370][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 14379][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 14387][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 14395][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[WORKER] Hello prepared (attempt 7)
+[ 14404][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #23)
+[I2C] RX: Invalid length 112
+[ 14882][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 14890][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 14898][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 14907][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 14915][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 14923][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 14932][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+
+[STATS] Requests: 24, Receives: 24, Registered: NO, ID: 255
+[ 15410][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 15418][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 15426][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 15435][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 15443][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 15451][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 15460][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 15938][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 15946][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 15954][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 15963][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 15971][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 15979][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 15988][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 8)
+[ 16466][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 16474][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 16482][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 16491][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 16499][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 16507][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 16516][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #27)
+[I2C] RX: Invalid length 112
+[ 16994][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 17002][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 17010][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 17019][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 17027][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 17035][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 17044][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 17522][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 17530][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 17538][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 17547][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 17555][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 17563][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 17572][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 18050][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 18058][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 18066][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 18075][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 18083][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 18091][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 18100][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 9)
+[ 18578][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 18586][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 18594][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 18603][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 18611][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 18619][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 18628][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #31)
+[I2C] RX: Invalid length 112
+[ 19106][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 19114][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 19122][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 19131][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 19139][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 19147][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 19156][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 19634][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 19642][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 19650][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 19659][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 19667][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 19675][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 19684][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+
+[STATS] Requests: 33, Receives: 33, Registered: NO, ID: 255
+[ 20162][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 20170][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 20178][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 20187][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 20195][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 20203][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 20212][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 10)
+[ 20690][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 20698][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 20706][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 20715][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 20723][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 20731][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 20740][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #35)
+[ 21218][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 21226][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 21234][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 21243][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 21251][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 21259][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 21268][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 21746][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 21754][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 21762][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 21771][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 21779][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 21787][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 21796][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 22274][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 22282][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 22290][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 22299][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 22307][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 22315][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 22324][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 11)
+[ 22802][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 22810][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 22818][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 22827][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 22835][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 22843][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 22852][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #39)
+[I2C] RX: Invalid length 112
+[ 23330][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 23338][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 23346][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 23355][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 23363][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 23371][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 23380][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 23858][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 23866][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 23874][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 23883][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 23891][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 23899][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 23908][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 24386][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 24394][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 24402][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 24411][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 24419][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 24427][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[WORKER] Hello prepared (attempt 12)
+[ 24436][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #42)
+[ 24914][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 24922][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 24930][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 24939][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 24947][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 24955][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 24964][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+
+[STATS] Requests: 43, Receives: 43, Registered: NO, ID: 255
+[ 25442][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 25450][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 25458][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 25467][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 25475][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 25483][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 25492][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 25970][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 25978][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 25986][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 25995][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 26003][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 26011][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 26020][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 13)
+[ 26498][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 26506][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 26514][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 26523][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 26531][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 26539][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 26548][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #46)
+[ 27026][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 27034][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 27042][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 27051][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 27059][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 27067][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 27076][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 27554][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 27562][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 27570][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 27579][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 27587][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 27595][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 27604][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 28082][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 28090][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 28098][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 28107][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 28115][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 28123][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 28132][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 14)
+[ 28610][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 28618][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 28626][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 28635][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 28643][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 28651][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 28660][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #50)
+[I2C] RX: Invalid length 112
+[ 29138][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 29146][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 29154][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 29163][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 29171][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 29179][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 29188][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 29666][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 29674][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 29682][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 29691][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 29699][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 29707][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 29716][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+
+[STATS] Requests: 52, Receives: 52, Registered: NO, ID: 255
+[ 30194][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 30202][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 30210][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 30219][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 30227][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 30235][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 30244][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 15)
+[ 30722][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 30730][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 30738][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 30747][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 30755][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 30763][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 30772][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #54)
+[I2C] RX: Invalid length 112
+[ 31250][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 31258][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 31266][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 31275][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 31283][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 31291][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 31300][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 31778][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 31786][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 31794][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 31803][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 31811][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 31819][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 31828][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 32306][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 32314][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 32322][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 32331][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 32339][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 32347][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 32356][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 16)
+[ 32834][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 32842][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 32850][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 32859][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 32867][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 32875][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 32884][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #58)
+[I2C] RX: Invalid length 112
+[ 33362][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 33370][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 33378][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 33387][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 33395][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 33403][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 33412][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 33890][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 33898][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 33906][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 33915][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 33923][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 33931][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 33940][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 34418][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 34426][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 34434][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 34443][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 34451][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 34459][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[WORKER] Hello prepared (attempt 17)
+[ 34468][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #61)
+[I2C] RX: Invalid length 112
+[ 34946][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 34954][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 34962][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 34971][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 34979][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 34987][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 34996][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+
+[STATS] Requests: 62, Receives: 62, Registered: NO, ID: 255
+[ 35474][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 35482][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 35490][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 35499][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 35507][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 35515][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 35524][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 36002][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 36010][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 36018][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 36027][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 36035][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 36043][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 36052][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 18)
+[ 36530][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 36538][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 36546][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 36555][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 36563][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 36571][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 36580][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #65)
+[I2C] RX: Invalid length 112
+[ 37059][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 37067][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 37075][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 37084][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 37092][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 37100][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 37109][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 37588][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 37596][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 37604][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 37613][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 37621][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 37629][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 37638][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 38116][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 38124][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 38132][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 38141][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 38149][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 38157][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 38166][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 19)
+[ 38645][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 38653][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 38661][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 38670][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 38678][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 38686][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 38695][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #69)
+[I2C] RX: Invalid length 112
+[ 39173][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 39181][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 39189][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 39198][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 39206][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 39214][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 39223][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 39702][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 39710][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 39717][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 39727][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 39735][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 39742][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 39751][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+
+[STATS] Requests: 71, Receives: 71, Registered: NO, ID: 255
+[ 40231][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 40239][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 40247][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 40256][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 40264][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 40272][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 40281][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 20)
+[ 40760][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 40768][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 40775][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 40785][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 40793][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 40800][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 40810][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #73)
+[I2C] RX: Invalid length 112
+[ 41288][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 41296][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 41304][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 41313][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 41321][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 41329][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 41338][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 41816][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 41824][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 41832][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 41841][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 41849][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 41857][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 41866][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 42344][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 42352][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 42360][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 42369][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 42377][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 42385][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 42394][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 21)
+[ 42873][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 42881][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 42889][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 42898][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 42906][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 42914][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 42923][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #77)
+[I2C] RX: Invalid length 112
+[ 43402][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 43410][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 43418][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 43427][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 43435][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 43443][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 43452][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 43931][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 43939][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 43947][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 43956][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 43964][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 43972][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 43981][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 44459][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 44467][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 44475][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[WORKER] Hello prepared (attempt 22)
+[ 44484][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 44492][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 44500][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 44509][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #80)
+[I2C] RX: Invalid length 112
+[ 44988][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 44996][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 45004][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 45013][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 45021][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 45029][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+
+[STATS] Requests: 80, Receives: 80, Registered: NO, ID: 255
+[ 45038][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 45516][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 45524][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 45532][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 45541][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 45549][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 45557][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 45566][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 46044][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 46052][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 46060][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 46069][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 46077][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 46085][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 46094][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 23)
+[ 46572][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 46580][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 46588][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 46597][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 46605][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 46613][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 46622][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #84)
+[I2C] RX: Invalid length 112
+[ 47101][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 47109][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 47117][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 47126][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 47134][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 47142][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 47151][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 47629][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 47637][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 47645][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 47654][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 47662][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 47670][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 47679][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 48158][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 48166][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 48174][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 48183][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 48191][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 48199][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 48208][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 24)
+[ 48687][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 48695][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 48703][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 48712][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 48720][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 48728][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 48737][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #88)
+[I2C] RX: Invalid length 112
+[ 49215][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 49223][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 49231][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 49240][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 49248][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 49256][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 49265][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 49744][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 49752][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 49760][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 49769][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 49777][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 49785][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 49794][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+
+[STATS] Requests: 90, Receives: 90, Registered: NO, ID: 255
+[ 50273][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 50281][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 50289][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 50298][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 50306][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 50314][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 50323][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 25)
+[ 50802][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 50810][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 50817][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 50827][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 50835][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 50842][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 50852][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #92)
+[I2C] RX: Invalid length 112
+[ 51330][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 51338][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 51346][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 51355][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 51363][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 51371][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 51380][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 51858][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 51866][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 51874][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 51883][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 51891][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 51899][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 51908][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 52386][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 52394][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 52402][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 52411][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 52419][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 52427][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 52436][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[WORKER] Hello prepared (attempt 26)
+[ 52915][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 52923][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 52930][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 52940][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 52948][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 52955][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 52965][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #96)
+[I2C] RX: Invalid length 112
+[ 53443][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 53451][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 53459][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 53468][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 53476][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 53484][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 53493][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 53972][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 53980][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 53988][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 53997][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 54005][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 54013][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 54022][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112
+[ 54501][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 54509][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 54517][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[WORKER] Hello prepared (attempt 27)
+[ 54526][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 54534][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 54542][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 54551][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] TX: 4 bytes (request #99)
+[I2C] RX: Invalid length 112
+[ 55029][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 55037][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 55045][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+
+[STATS] Requests: 99, Receives: 99, Registered: NO, ID: 255
+[ 55054][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 55062][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 55070][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[ 55079][E][esp32-hal-i2c-slave.c:669] i2c_slave_handle_rx_fifo_full(): rx_ring_buf_full
+[I2C] RX: Invalid length 112

@@ -1,0 +1,164 @@
+========================================
+ESP32 MINING WORKER - DEBUG MODE
+========================================
+I2C Address: 0x20
+I2C Frequency: 200000 Hz
+[  2332][I][esp32-hal-i2c-slave.c:234] i2cSlaveInit(): Initialising I2C Slave: sda=8 scl=9 freq=200000, addr=0x20
+[I2C] Slave mode initialized
+[I2C] Waiting for master requests...
+[LED] NeoPixel initialized
+[WORKER] Hello prepared (attempt 1)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #1)
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 2)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #134)
+
+[STATS] Requests: 177, Receives: 0, Registered: NO, ID: 255
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 3)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #267)
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 4)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #400)
+
+[STATS] Requests: 509, Receives: 0, Registered: NO, ID: 255
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 5)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #533)
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 6)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #659)
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 7)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #792)
+
+[STATS] Requests: 835, Receives: 0, Registered: NO, ID: 255
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 8)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #843)
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 9)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #874)
+
+[STATS] Requests: 983, Receives: 0, Registered: NO, ID: 255
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 10)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #1007)
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 11)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #1140)
+[WORKER] Hello prepared (attempt 12)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #1273)
+
+[STATS] Requests: 1315, Receives: 0, Registered: NO, ID: 255
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 13)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #1405)
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 14)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #1538)
+
+[STATS] Requests: 1647, Receives: 0, Registered: NO, ID: 255
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 15)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #1671)
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 16)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #1804)
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 17)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #1936)
+
+[STATS] Requests: 1979, Receives: 0, Registered: NO, ID: 255
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 18)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #2069)
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 19)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #2202)
+
+[STATS] Requests: 2311, Receives: 0, Registered: NO, ID: 255
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 20)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #2335)
+[WORKER] Hello prepared (attempt 21)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #2468)
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 22)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #2600)
+
+[STATS] Requests: 2643, Receives: 0, Registered: NO, ID: 255
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 23)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #2733)
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 24)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #2866)
+
+[STATS] Requests: 2975, Receives: 0, Registered: NO, ID: 255
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 25)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #2999)
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 26)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #3131)
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 27)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #3264)
+
+[STATS] Requests: 3307, Receives: 0, Registered: NO, ID: 255
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 28)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #3397)
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 29)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #3530)
+
+[STATS] Requests: 3639, Receives: 0, Registered: NO, ID: 255
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 30)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #3662)
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 31)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #3795)
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 32)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #3928)
+
+[STATS] Requests: 3971, Receives: 0, Registered: NO, ID: 255
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 33)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #4061)

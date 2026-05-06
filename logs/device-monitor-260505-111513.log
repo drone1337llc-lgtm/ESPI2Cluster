@@ -1,0 +1,15 @@
+[ 11364][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 3 failed: 5
+[ 14370][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 4 failed: 5
+[ 17376][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 5 failed: 5
+[ 20382][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 6 failed: 5
+[ 23388][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 7 failed: 5
+[ 26394][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 0 failed: 5
+[ 29411][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 1 failed: 5
+[ 32417][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263

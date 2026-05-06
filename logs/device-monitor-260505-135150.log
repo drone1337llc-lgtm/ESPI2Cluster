@@ -1,0 +1,306 @@
+
+[STATS] Requests: 665, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 8)
+[I2C] TX: 4 bytes (request #755)
+[WORKER] Hello prepared (attempt 9)
+[I2C] TX: 4 bytes (request #888)
+
+[STATS] Requests: 998, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 10)
+[I2C] TX: 4 bytes (request #1022)
+[WORKER] Hello prepared (attempt 11)
+[I2C] TX: 4 bytes (request #1155)
+[WORKER] Hello prepared (attempt 12)
+[I2C] TX: 4 bytes (request #1289)
+
+[STATS] Requests: 1332, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 13)
+[I2C] TX: 4 bytes (request #1422)
+[WORKER] Hello prepared (attempt 14)
+[I2C] TX: 4 bytes (request #1555)
+
+[STATS] Requests: 1666, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 15)
+[I2C] TX: 4 bytes (request #1689)
+[WORKER] Hello prepared (attempt 16)
+[I2C] TX: 4 bytes (request #1822)
+[WORKER] Hello prepared (attempt 17)
+[I2C] TX: 4 bytes (request #1955)
+
+[STATS] Requests: 1999, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 18)
+[I2C] TX: 4 bytes (request #2089)
+[WORKER] Hello prepared (attempt 19)
+[I2C] TX: 4 bytes (request #2222)
+
+[STATS] Requests: 2283, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 20)
+[I2C] TX: 4 bytes (request #2284)
+[WORKER] Hello prepared (attempt 21)
+[I2C] TX: 4 bytes (request #2306)
+[WORKER] Hello prepared (attempt 22)
+[I2C] TX: 4 bytes (request #2440)
+
+[STATS] Requests: 2483, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 23)
+[I2C] TX: 4 bytes (request #2573)
+[WORKER] Hello prepared (attempt 24)
+[I2C] TX: 4 bytes (request #2706)
+
+[STATS] Requests: 2817, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 25)
+[I2C] TX: 4 bytes (request #2840)
+[WORKER] Hello prepared (attempt 26)
+[I2C] TX: 4 bytes (request #2973)
+[WORKER] Hello prepared (attempt 27)
+[I2C] TX: 4 bytes (request #3106)
+
+[STATS] Requests: 3150, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 28)
+[I2C] TX: 4 bytes (request #3240)
+[WORKER] Hello prepared (attempt 29)
+[I2C] TX: 4 bytes (request #3373)
+
+[STATS] Requests: 3483, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 30)
+[I2C] TX: 4 bytes (request #3506)
+[WORKER] Hello prepared (attempt 31)
+[I2C] TX: 4 bytes (request #3640)
+[WORKER] Hello prepared (attempt 32)
+[I2C] TX: 4 bytes (request #3773)
+
+[STATS] Requests: 3817, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 33)
+[I2C] TX: 4 bytes (request #3906)
+[WORKER] Hello prepared (attempt 34)
+[I2C] TX: 4 bytes (request #4040)
+
+[STATS] Requests: 4150, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 35)
+[I2C] TX: 4 bytes (request #4173)
+[WORKER] Hello prepared (attempt 36)
+[I2C] TX: 4 bytes (request #4306)
+[WORKER] Hello prepared (attempt 37)
+[I2C] TX: 4 bytes (request #4440)
+
+[STATS] Requests: 4483, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 38)
+[I2C] TX: 4 bytes (request #4573)
+[WORKER] Hello prepared (attempt 39)
+[I2C] TX: 4 bytes (request #4706)
+
+[STATS] Requests: 4817, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 40)
+[I2C] TX: 4 bytes (request #4840)
+[WORKER] Hello prepared (attempt 41)
+[I2C] TX: 4 bytes (request #4973)
+[WORKER] Hello prepared (attempt 42)
+[I2C] TX: 4 bytes (request #5106)
+
+[STATS] Requests: 5150, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 43)
+[I2C] TX: 4 bytes (request #5240)
+[WORKER] Hello prepared (attempt 44)
+[I2C] TX: 4 bytes (request #5373)
+
+[STATS] Requests: 5483, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 45)
+[I2C] TX: 4 bytes (request #5506)
+[WORKER] Hello prepared (attempt 46)
+[I2C] TX: 4 bytes (request #5640)
+[WORKER] Hello prepared (attempt 47)
+[I2C] TX: 4 bytes (request #5773)
+
+[STATS] Requests: 5817, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 48)
+[I2C] TX: 4 bytes (request #5906)
+[WORKER] Hello prepared (attempt 49)
+[I2C] TX: 4 bytes (request #6040)
+
+[STATS] Requests: 6143, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 50)
+[I2C] TX: 4 bytes (request #6167)
+[WORKER] Hello prepared (attempt 51)
+[I2C] TX: 4 bytes (request #6300)
+[WORKER] Hello prepared (attempt 52)
+[I2C] TX: 4 bytes (request #6433)
+
+[STATS] Requests: 6477, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 53)
+[I2C] TX: 4 bytes (request #6567)
+[WORKER] Hello prepared (attempt 54)
+[I2C] TX: 4 bytes (request #6700)
+
+[STATS] Requests: 6810, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 55)
+[I2C] TX: 4 bytes (request #6833)
+[WORKER] Hello prepared (attempt 56)
+[I2C] TX: 4 bytes (request #6967)
+[WORKER] Hello prepared (attempt 57)
+[I2C] TX: 4 bytes (request #7100)
+
+[STATS] Requests: 7144, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 58)
+[I2C] TX: 4 bytes (request #7233)
+[WORKER] Hello prepared (attempt 59)
+[I2C] TX: 4 bytes (request #7367)
+
+[STATS] Requests: 7477, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 60)
+[I2C] TX: 4 bytes (request #7500)
+[WORKER] Hello prepared (attempt 61)
+[I2C] TX: 4 bytes (request #7633)
+[WORKER] Hello prepared (attempt 62)
+[I2C] TX: 4 bytes (request #7767)
+
+[STATS] Requests: 7810, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 63)
+[I2C] TX: 4 bytes (request #7900)
+[WORKER] Hello prepared (attempt 64)
+[I2C] TX: 4 bytes (request #8033)
+
+[STATS] Requests: 8144, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 65)
+[I2C] TX: 4 bytes (request #8167)
+[WORKER] Hello prepared (attempt 66)
+[I2C] TX: 4 bytes (request #8300)
+[WORKER] Hello prepared (attempt 67)
+[I2C] TX: 4 bytes (request #8433)
+
+[STATS] Requests: 8477, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 68)
+[I2C] TX: 4 bytes (request #8567)
+[WORKER] Hello prepared (attempt 69)
+[I2C] TX: 4 bytes (request #8700)
+
+[STATS] Requests: 8810, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 70)
+[I2C] TX: 4 bytes (request #8833)
+[WORKER] Hello prepared (attempt 71)
+[I2C] TX: 4 bytes (request #8967)
+[WORKER] Hello prepared (attempt 72)
+[I2C] TX: 4 bytes (request #9100)
+
+[STATS] Requests: 9144, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 73)
+[I2C] TX: 4 bytes (request #9233)
+[WORKER] Hello prepared (attempt 74)
+[I2C] TX: 4 bytes (request #9367)
+
+[STATS] Requests: 9477, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 75)
+[I2C] TX: 4 bytes (request #9500)
+[WORKER] Hello prepared (attempt 76)
+[I2C] TX: 4 bytes (request #9633)
+[WORKER] Hello prepared (attempt 77)
+[I2C] TX: 4 bytes (request #9767)
+
+[STATS] Requests: 9810, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 78)
+[I2C] TX: 4 bytes (request #9900)
+[WORKER] Hello prepared (attempt 79)
+[I2C] TX: 4 bytes (request #10033)
+
+[STATS] Requests: 10137, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 80)
+[I2C] TX: 4 bytes (request #10160)
+[WORKER] Hello prepared (attempt 81)
+[I2C] TX: 4 bytes (request #10294)
+[WORKER] Hello prepared (attempt 82)
+[I2C] TX: 4 bytes (request #10427)
+
+[STATS] Requests: 10471, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 83)
+[I2C] TX: 4 bytes (request #10561)
+[WORKER] Hello prepared (attempt 84)
+[I2C] TX: 4 bytes (request #10694)
+
+[STATS] Requests: 10804, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 85)
+[I2C] TX: 4 bytes (request #10827)
+[WORKER] Hello prepared (attempt 86)
+[I2C] TX: 4 bytes (request #10961)
+[WORKER] Hello prepared (attempt 87)
+[I2C] TX: 4 bytes (request #11094)
+
+[STATS] Requests: 11138, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 88)
+[I2C] TX: 4 bytes (request #11227)
+[WORKER] Hello prepared (attempt 89)
+[I2C] TX: 4 bytes (request #11361)
+
+[STATS] Requests: 11471, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 90)
+[I2C] TX: 4 bytes (request #11494)
+[WORKER] Hello prepared (attempt 91)
+[I2C] TX: 4 bytes (request #11627)
+[WORKER] Hello prepared (attempt 92)
+[I2C] TX: 4 bytes (request #11761)
+
+[STATS] Requests: 11804, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 93)
+[I2C] TX: 4 bytes (request #11894)
+[WORKER] Hello prepared (attempt 94)
+[I2C] TX: 4 bytes (request #12027)
+
+[STATS] Requests: 12138, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 95)
+[I2C] TX: 4 bytes (request #12161)
+[WORKER] Hello prepared (attempt 96)
+[I2C] TX: 4 bytes (request #12294)
+[WORKER] Hello prepared (attempt 97)
+[I2C] TX: 4 bytes (request #12427)
+
+[STATS] Requests: 12471, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 98)
+[I2C] TX: 4 bytes (request #12561)
+[WORKER] Hello prepared (attempt 99)
+[I2C] TX: 4 bytes (request #12694)
+
+[STATS] Requests: 12804, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 100)
+[I2C] TX: 4 bytes (request #12828)
+[WORKER] Hello prepared (attempt 101)
+[I2C] TX: 4 bytes (request #12961)
+[WORKER] Hello prepared (attempt 102)
+[I2C] TX: 4 bytes (request #13094)
+
+[STATS] Requests: 13138, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 103)
+[I2C] TX: 4 bytes (request #13228)
+[WORKER] Hello prepared (attempt 104)
+[I2C] TX: 4 bytes (request #13361)
+
+[STATS] Requests: 13471, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 105)
+[I2C] TX: 4 bytes (request #13494)
+[WORKER] Hello prepared (attempt 106)
+[I2C] TX: 4 bytes (request #13628)
+[WORKER] Hello prepared (attempt 107)
+[I2C] TX: 4 bytes (request #13761)
+
+[STATS] Requests: 13805, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 108)
+[I2C] TX: 4 bytes (request #13894)
+[WORKER] Hello prepared (attempt 109)
+[I2C] TX: 4 bytes (request #14028)
+
+[STATS] Requests: 14132, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 110)
+[I2C] TX: 4 bytes (request #14155)
+[WORKER] Hello prepared (attempt 111)
+[I2C] TX: 4 bytes (request #14288)
+[WORKER] Hello prepared (attempt 112)
+[I2C] TX: 4 bytes (request #14421)
+
+[STATS] Requests: 14465, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 113)
+[I2C] TX: 4 bytes (request #14555)
+[WORKER] Hello prepared (attempt 114)
+[I2C] TX: 4 bytes (request #14688)
+
+[STATS] Requests: 14798, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 115)
+[I2C] TX: 4 bytes (request #14821)
+[WORKER] Hello prepared (attempt 116)
+[I2C] TX: 4 bytes (request #14955)

@@ -1,0 +1,171 @@
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+[I2C] Scanning bus for devices...
+  Main bus:
+    Device at 0x70 (TCA9548A Mux)
+  Mux channels:
+    Channel 0: Device at 0x20
+    Channel 0: Device at 0x70
+    Channel 1: Device at 0x20
+    Channel 1: Device at 0x70
+    Channel 2: Device at 0x20
+    Channel 2: Device at 0x70
+    Channel 3: Device at 0x20
+    Channel 3: Device at 0x70
+    Channel 4: Device at 0x20
+    Channel 4: Device at 0x70
+    Channel 5: Device at 0x20
+    Channel 5: Device at 0x70
+    Channel 6: Device at 0x20
+    Channel 6: Device at 0x70
+    Channel 7: Device at 0x20
+    Channel 7: Device at 0x70
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+[I2C] Scanning bus for devices...
+  Main bus:
+    Device at 0x70 (TCA9548A Mux)
+  Mux channels:
+    Channel 0: Device at 0x20
+    Channel 0: Device at 0x70
+    Channel 1: Device at 0x20
+    Channel 1: Device at 0x70
+    Channel 2: Device at 0x20
+    Channel 2: Device at 0x70
+    Channel 3: Device at 0x20
+    Channel 3: Device at 0x70
+    Channel 4: Device at 0x20
+    Channel 4: Device at 0x70
+    Channel 5: Device at 0x20
+    Channel 5: Device at 0x70
+    Channel 6: Device at 0x20
+    Channel 6: Device at 0x70
+    Channel 7: Device at 0x20
+    Channel 7: Device at 0x70
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+[I2C] Scanning bus for devices...
+  Main bus:
+    Device at 0x70 (TCA9548A Mux)
+  Mux channels:
+    Channel 0: Device at 0x20
+    Channel 0: Device at 0x70
+    Channel 1: Device at 0x20
+    Channel 1: Device at 0x70
+    Channel 2: Device at 0x20
+    Channel 2: Device at 0x70
+    Channel 3: Device at 0x20
+    Channel 3: Device at 0x70
+    Channel 4: Device at 0x20
+    Channel 4: Device at 0x70
+    Channel 5: Device at 0x20
+    Channel 5: Device at 0x70
+    Channel 6: Device at 0x20
+    Channel 6: Device at 0x70
+    Channel 7: Device at 0x20
+    Channel 7: Device at 0x70
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Worker 0 hello received
+Job 8 sent
+Worker 0 config sent
+Workers: 1/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Worker 1 hello received
+Worker 1 config sent
+Worker 2 hello received
+Worker 2 config sent
+Worker 3 hello received
+Worker 3 config sent
+Worker 4 hello received
+Worker 4 config sent
+Worker 5 hello received
+Job 9 sent
+Worker 5 config sent
+Worker 6 hello received
+Worker 6 config sent
+Worker 7 hello received
+Worker 7 config sent
+Job 10 sent
+Workers: 8/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Job 11 sent
+Worker 0 timeout
+Worker 3 timeout
+Worker 1 timeout
+Worker 2 timeout
+Worker 4 timeout
+Job 12 sent
+Worker 5 timeout
+Workers: 2/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Worker 6 timeout
+Worker 7 timeout
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+[I2C] Scanning bus for devices...
+  Main bus:
+    Device at 0x70 (TCA9548A Mux)
+  Mux channels:
+    Channel 0: Device at 0x20
+    Channel 0: Device at 0x70
+    Channel 1: Device at 0x20
+    Channel 1: Device at 0x70
+    Channel 2: Device at 0x20
+    Channel 2: Device at 0x70
+    Channel 3: Device at 0x20
+    Channel 3: Device at 0x70
+    Channel 4: Device at 0x20
+    Channel 4: Device at 0x70
+    Channel 5: Device at 0x20
+    Channel 5: Device at 0x70
+    Channel 6: Device at 0x20
+    Channel 6: Device at 0x70
+    Channel 7: Device at 0x20
+    Channel 7: Device at 0x70
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)

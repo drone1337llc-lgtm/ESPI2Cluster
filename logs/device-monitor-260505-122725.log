@@ -1,0 +1,63 @@
+    Device at 0x70 (TCA9548A Mux)
+  Mux channels:
+    Channel 0: Device at 0x70
+    Channel 1: Device at 0x70
+    Channel 2: Device at 0x70
+    Channel 3: Device at 0x70
+    Channel 4: Device at 0x70
+    Channel 5: Device at 0x70
+    Channel 6: Device at 0x63
+    Channel 7: Device at 0x70
+[LED] NeoPixel initialized
+READY - Waiting for workers...
+========================================
+[ 29657][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29663][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29669][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29676][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29682][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29688][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29694][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29701][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29707][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29713][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29720][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29726][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29732][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29738][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29745][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29751][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29757][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29763][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29857][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29869][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29881][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29893][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29899][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 29905][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+[ 30923][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 30930][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 30936][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 30942][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 30948][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 30955][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 30961][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 30967][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 30973][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 30980][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 30986][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 30992][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 30999][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 31005][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 31011][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 31018][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 31024][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 31030][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 31129][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 32135][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[ 33141][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[ 36147][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[ 37153][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[ 38159][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263

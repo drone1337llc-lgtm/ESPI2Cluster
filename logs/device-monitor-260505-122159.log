@@ -1,0 +1,15 @@
+[  2331][E][esp32-hal-adc.c:158] __analogReadRaw(): Pin 0 is not ADC pin!
+========================================
+ESP32 MINING MASTER
+========================================
+Max Workers: 8
+I2C Speed: 200000 Hz
+I2C Pins: SDA=8, SCL=9
+[  2338][I][esp32-hal-i2c.c:75] i2cInit(): Initialising I2C Master: sda=8 scl=9 freq=200000
+[  2347][W][Wire.cpp:301] begin(): Bus already started in Master Mode.
+[I2C] TCA9548A mux initialized
+[I2C] Scanning bus for devices...
+  Main bus:
+    No devices on main bus
+  Mux channels:
+    Channel 0: No devices

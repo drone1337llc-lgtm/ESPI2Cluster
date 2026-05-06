@@ -1,0 +1,64 @@
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+[I2C] Scanning bus for devices...
+  Main bus:
+    Device at 0x70 (TCA9548A Mux)
+  Mux channels:
+    Channel 0: Device at 0x20
+    Channel 0: Device at 0x70
+    Channel 1: Device at 0x20
+    Channel 1: Device at 0x70
+    Channel 2: Device at 0x20
+    Channel 2: Device at 0x70
+    Channel 3: Device at 0x20
+    Channel 3: Device at 0x70
+    Channel 4: Device at 0x20
+    Channel 4: Device at 0x70
+    Channel 5: Device at 0x20
+    Channel 5: Device at 0x70
+    Channel 6: Device at 0x20
+    Channel 6: Device at 0x70
+    Channel 7: Device at 0x20
+    Channel 7: Device at 0x70
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+[I2C] Scanning bus for devices...
+  Main bus:
+    Device at 0x70 (TCA9548A Mux)
+  Mux channels:
+    Channel 0: Device at 0x20
+    Channel 0: Device at 0x70
+    Channel 1: Device at 0x20
+    Channel 1: Device at 0x70
+    Channel 2: Device at 0x20
+    Channel 2: Device at 0x70
+    Channel 3: Device at 0x20
+    Channel 3: Device at 0x70
+    Channel 4: Device at 0x20
+    Channel 4: Device at 0x70
+    Channel 5: Device at 0x20
+    Channel 5: Device at 0x70
+    Channel 6: Device at 0x20
+    Channel 6: Device at 0x70
+    Channel 7: Device at 0x20
+    Channel 7: Device at 0x70
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+Mode: Mux (channels active: 0x00)

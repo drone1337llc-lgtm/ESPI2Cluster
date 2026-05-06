@@ -1,0 +1,4 @@
+[   319][I][esp32-hal-psram.c:96] psramInit(): PSRAM enabled
+[  2331][E][esp32-hal-adc.c:158] __analogReadRaw(): Pin 0 is not ADC pin!
+[  2337][I][esp32-hal-i2c.c:75] i2cInit(): Initialising I2C Master: sda=8 scl=9 freq=400000
+[  2366][W][Wire.cpp:301] begin(): Bus already started in Master Mode.

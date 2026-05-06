@@ -1,0 +1,40 @@
+========================================
+ESP32 MINING WORKER
+========================================
+I2C Address: 0x20
+HW Batch: 16384, SW Batch: 4096
+[  2334][I][esp32-hal-i2c-slave.c:234] i2cSlaveInit(): Initialising I2C Slave: sda=8 scl=9 freq=100000, addr=0x20
+[I2C] Slave initialized
+[LED] NeoPixel initialized
+[SHA] Hardware initialized
+[MINER] HW task started on Core 0
+[MINER] SW task started on Core 1
+Hello sent (attempt 1)
+Waiting for master assignment...
+Hello sent (attempt 2)
+Hello sent (attempt 3)
+Hello sent (attempt 4)
+Hello sent (attempt 5)
+Hello sent (attempt 6)
+Hello sent (attempt 7)
+Hello sent (attempt 8)
+Hello sent (attempt 9)
+Hello sent (attempt 10)
+[WORKER] Max hello retries reached - check master connection
+Hello sent (attempt 1)
+Hello sent (attempt 2)
+Hello sent (attempt 3)
+Hello sent (attempt 4)
+Hello sent (attempt 5)
+Hello sent (attempt 6)
+Hello sent (attempt 7)
+Hello sent (attempt 8)
+Hello sent (attempt 9)
+Hello sent (attempt 10)
+[WORKER] Max hello retries reached - check master connection
+Hello sent (attempt 1)
+Hello sent (attempt 2)
+Hello sent (attempt 3)
+Hello sent (attempt 4)
+Hello sent (attempt 5)
+Hello sent (attempt 6)

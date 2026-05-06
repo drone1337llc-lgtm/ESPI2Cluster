@@ -1,0 +1,68 @@
+[  2331][E][esp32-hal-adc.c:158] __analogReadRaw(): Pin 0 is not ADC pin!
+========================================
+ESP32 MINING MASTER
+========================================
+Max Workers: 8
+I2C Speed: 200000 Hz
+I2C Pins: SDA=8, SCL=9
+[  2338][I][esp32-hal-i2c.c:75] i2cInit(): Initialising I2C Master: sda=8 scl=9 freq=200000
+[  2347][W][Wire.cpp:301] begin(): Bus already started in Master Mode.
+[I2C] TCA9548A mux initialized
+[I2C] Scanning bus for devices...
+  Main bus:
+    Device at 0x75
+  Mux channels:
+    Channel 0: Device at 0x11
+    Channel 0: Device at 0x13
+    Channel 0: Device at 0x14
+    Channel 0: Device at 0x21
+    Channel 0: Device at 0x22
+    Channel 0: Device at 0x23
+    Channel 0: Device at 0x70
+    Channel 1: Device at 0x70
+    Channel 2: Device at 0x70
+    Channel 3: Device at 0x70
+    Channel 4: Device at 0x70
+    Channel 5: Device at 0x70
+    Channel 6: Device at 0x04
+    Channel 6: Device at 0x08
+    Channel 6: Device at 0x30
+    Channel 6: Device at 0x46
+    Channel 6: Device at 0x5D
+    Channel 6: Device at 0x70
+    Channel 7: Device at 0x70
+[LED] NeoPixel initialized
+READY - Waiting for workers...
+========================================
+[ 93761][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 93768][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 93774][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 93781][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 93787][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 93793][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 93799][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 93806][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 93812][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 93818][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 93825][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 93831][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 93837][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 93843][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 93850][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 93856][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 93862][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 93868][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 93965][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 93977][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 93989][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 94001][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 94008][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 94014][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[I2C] Scanning bus for devices...
+  Main bus:
+    Device at 0x70 (TCA9548A Mux)
+  Mux channels:
+    Channel 0: Device at 0x70
+    Channel 1: Device at 0x70
+    Channel 2: Device at 0x70
+    Channel 3: Device at 0x70

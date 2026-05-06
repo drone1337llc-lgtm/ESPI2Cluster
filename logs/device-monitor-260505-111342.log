@@ -1,0 +1,64 @@
+[  2335][E][esp32-hal-adc.c:158] __analogReadRaw(): Pin 0 is not ADC pin!
+========================================
+ESP32 MINING MASTER
+========================================
+Max Workers: 8
+I2C Speed: 200000 Hz
+[  2342][I][esp32-hal-i2c.c:75] i2cInit(): Initialising I2C Master: sda=8 scl=9 freq=200000
+[I2C] Mux initialized
+[LED] NeoPixel initialized
+READY - Waiting for workers...
+========================================
+[I2C] Mux select channel 0 failed: 5
+[  5352][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 1 failed: 5
+[  8358][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 2 failed: 5
+[ 11364][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 3 failed: 5
+[ 14370][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 4 failed: 5
+[ 17376][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 5 failed: 5
+[ 20382][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 6 failed: 5
+[ 23388][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 7 failed: 5
+[ 26394][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 0 failed: 5
+[ 29411][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 1 failed: 5
+[ 32417][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 2 failed: 5
+[ 35423][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 3 failed: 5
+[ 38429][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 4 failed: 5
+[ 41435][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 5 failed: 5
+[ 44441][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 6 failed: 5
+[ 47447][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 7 failed: 5
+[ 50453][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+[I2C] Mux select channel 0 failed: 5
+[ 53470][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 1 failed: 5
+[ 56476][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 2 failed: 5
+[ 59482][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 3 failed: 5
+[ 62488][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 4 failed: 5
+[ 65494][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 5 failed: 5
+[ 68500][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 6 failed: 5
+[ 71506][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 7 failed: 5
+[ 74512][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+Workers: 0/8, Hashrate: 0.0 H/s, Shares: 0/0
+[I2C] Mux select channel 0 failed: 5
+[ 77529][E][Wire.cpp:513] requestFrom(): i2cRead returned Error 263
+[I2C] Mux select channel 1 failed: 5

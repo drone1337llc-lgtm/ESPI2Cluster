@@ -1,0 +1,22 @@
+[WORKER] Hello prepared (attempt 34)
+[I2C] TX: 4 bytes (request #4217)
+
+[STATS] Requests: 4326, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 35)
+[I2C] TX: 4 bytes (request #4350)
+[WORKER] Hello prepared (attempt 36)
+[I2C] TX: 4 bytes (request #4483)
+[WORKER] Hello prepared (attempt 37)
+[I2C] TX: 4 bytes (request #4617)
+
+[STATS] Requests: 4660, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 38)
+[I2C] TX: 4 bytes (request #4750)
+[WORKER] Hello prepared (attempt 39)
+[I2C] TX: 4 bytes (request #4884)
+
+[STATS] Requests: 4993, Receives: 0, Registered: NO, ID: 255
+[WORKER] Hello prepared (attempt 40)
+[I2C] TX: 4 bytes (request #5017)
+[WORKER] Hello prepared (attempt 41)
+[I2C] TX: 4 bytes (request #5150)

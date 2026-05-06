@@ -1,0 +1,23 @@
+[WORKER] Hello prepared (attempt 8)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #916)
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 9)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #1049)
+
+[STATS] Requests: 1158, Receives: 0, Registered: NO, ID: 255
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 10)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #1181)
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 11)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #1314)
+[WORKER] Config timeout - retrying hello
+[WORKER] Hello prepared (attempt 12)
+[I2C] Sent hello, waiting for config...
+[I2C] TX: 4 bytes (request #1447)
+
+[STATS] Requests: 1490, Receives: 0, Registered: NO, ID: 255
