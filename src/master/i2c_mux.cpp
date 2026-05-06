@@ -1,5 +1,5 @@
-//Author : Sergio WIlliams
-//GPL - 3.0 - or -later
+// Author : Sergio WIlliams
+// GPL - 3.0 - or -later
 
 #include "i2c_mux.h"
 
@@ -24,13 +24,12 @@ void I2CMux::hardReset()
 
 bool I2CMux::begin()
 {
-    // FIX: Don't call Wire.begin() here - it's already initialized by framework
-    // The TCA9548A library will use the existing Wire instance
-
     hardReset();
 
-    // Initialize mux
-    Wire.setBufferSize(256);
+    // Set maximum I2C buffer size
+    Wire.setBufferSize(I2C_BUFFER_SIZE);
+    Wire.setClock(I2C_SPEED);
+
     _mux.begin(Wire);
 
     // Test communication

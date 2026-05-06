@@ -1,5 +1,5 @@
-//Author : Sergio WIlliams
-//GPL - 3.0 - or -later
+// Author : Sergio WIlliams
+// GPL - 3.0 - or -later
 
 #ifndef CONFIG_H
 #define CONFIG_H
@@ -7,15 +7,8 @@
 #include <Arduino.h>
 
 // ============================================================================
-// DEVICE TYPE SELECTION (define ONE in platformio.ini)
-// ============================================================================
-// #define MASTER_DEVICE
-// #define WORKER_DEVICE
-
-// ============================================================================
 // DEBUG CONFIGURATION
 // ============================================================================
-// Set to 0 for production (web server provides monitoring instead)
 #define DEBUG_ENABLED 1
 #define DEBUG_SERIAL2 Serial2
 
@@ -30,19 +23,30 @@
 #endif
 
 // ============================================================================
+// BUFFER CONFIGURATION - MAXIMIZED
+// ============================================================================
+#define SERIAL_RX_BUFFER_SIZE 8192
+#define SERIAL_TX_BUFFER_SIZE 8192
+#define I2C_BUFFER_SIZE 512
+#define WIFI_RX_BUFFER_SIZE 8192
+#define WIFI_TX_BUFFER_SIZE 8192
+
+// ============================================================================
 // WIFI CONFIGURATION (Master only)
 // ============================================================================
 #define WIFI_SSID "Patricia27680"
 #define WIFI_PASSWORD "FluffyBentley"
 #define WEB_SERVER_PORT 80
 #define WIFI_TIMEOUT_MS 30000
+
 // ============================================================================
 // MINING CONFIGURATION
 // ============================================================================
 #define POLL_INTERVAL_MS 200
-#define HEARTBEAT_TIMEOUT_MS 15000
-#define JOB_TIMEOUT_MS 150000
 #define HEARTBEAT_TIMEOUT_MS 60000
+#define JOB_TIMEOUT_MS 120000
+#define WORKER_RECOVERY_ATTEMPTS 3
+#define WORKER_RECOVERY_INTERVAL_MS 500
 #define MINING_STACK_SIZE 12288
 #define DIFFICULTY_STEP 0.5f
 #define MIN_DIFFICULTY 0.001f
@@ -56,6 +60,13 @@
 #ifndef MAX_WORKERS
 #define MAX_WORKERS 8
 #endif
+
+// ============================================================================
+// JOB ASSIGNMENT CONFIGURATION
+// ============================================================================
+#define JOB_ASSIGNMENT_DELAY_MS 1000 // 1 second between workers
+#define JOB_SEND_TIMEOUT_MS 500
+#define WORKER_HEALTH_CHECK_BEFORE_JOB true
 
 // ============================================================================
 // LED CONFIGURATION

@@ -1,5 +1,5 @@
-//Author : Sergio WIlliams
-//GPL - 3.0 - or -later
+// Author : Sergio WIlliams
+// GPL - 3.0 - or -later
 
 #ifdef MASTER_DEVICE
 
@@ -14,7 +14,6 @@
 // ============================================================================
 // CONSTANTS
 // ============================================================================
-#define I2C_BUFFER_SIZE 256
 #define HASHRATE_AVG_SAMPLES 30
 #define HASHRATE_DECAY_MS 180000
 #define RX2_PIN 2
@@ -40,6 +39,9 @@ struct WorkerData
     uint32_t hashrate_samples;
     bool pending_config;
     uint32_t config_time;
+    uint8_t recovery_attempts;
+    uint32_t last_recovery_attempt;
+    bool needs_health_check;
 };
 
 // ============================================================================
@@ -57,11 +59,16 @@ static uint32_t g_led_pattern_time = 0;
 
 static uint8_t g_rx_buffer[I2C_BUFFER_SIZE];
 
+// Job assignment tracking for staggered distribution
+static uint8_t g_last_job_worker = 0xFF;
+static uint32_t g_last_job_time = 0;
+static bool g_job_pending = false;
+
 // ============================================================================
 // FUNCTION DECLARATIONS
 // ============================================================================
 void processWorkerData(uint8_t channel);
-void sendJobToWorker(uint8_t channel, uint8_t worker_id);
+bool sendJobToWorker(uint8_t channel, uint8_t worker_id);
 void cleanupStaleWorkers();
 void updateHashrate();
 void printStatus();
@@ -70,15 +77,24 @@ void updateLEDStatus();
 void scanI2CBus();
 bool readWorkerData(uint8_t channel, uint8_t *buffer, uint8_t *len);
 float calculateTotalHashrate();
+bool checkWorkerHealth(uint8_t channel);
+bool recoverWorker(uint8_t channel);
+void scheduleNextJob();
+void processJobAssignment();
 
 // ============================================================================
 // SETUP
 // ============================================================================
 void setup()
 {
-    Serial.setRxBufferSize(4096);
+    // MAXIMIZE SERIAL BUFFERS
+    Serial.setRxBufferSize(SERIAL_RX_BUFFER_SIZE);
+    Serial.setTxBufferSize(SERIAL_TX_BUFFER_SIZE);
     Serial.begin(115200);
     delay(2000);
+
+    Serial2.setRxBufferSize(SERIAL_RX_BUFFER_SIZE);
+    Serial2.setTxBufferSize(SERIAL_TX_BUFFER_SIZE);
     Serial2.begin(115200, SERIAL_8N1, RX2_PIN, TX2_PIN);
 
     uint8_t mac[6];
@@ -88,15 +104,21 @@ void setup()
     randomSeed(seed);
 
     DEBUG_PRINTLN("========================================");
-    DEBUG_PRINTLN("ESP32 MINING MASTER");
+    DEBUG_PRINTLN("ESP32 MINING MASTER - OPTIMIZED");
     DEBUG_PRINTLN("========================================");
     DEBUG_PRINTF("Max Workers: %d\n", MAX_WORKERS);
     DEBUG_PRINTF("I2C Speed: %d Hz\n", I2C_SPEED);
+    DEBUG_PRINTF("I2C Buffer: %d bytes\n", I2C_BUFFER_SIZE);
+    DEBUG_PRINTF("Serial Buffer: %d bytes\n", SERIAL_RX_BUFFER_SIZE);
+    DEBUG_PRINTF("Job Delay: %d ms\n", JOB_ASSIGNMENT_DELAY_MS);
 
     LED.begin();
     LED.setPattern(LED_STARTUP);
     g_current_led_pattern = LED_STARTUP;
     g_led_pattern_time = millis();
+
+    // Initialize I2C with maximum buffer
+    Wire.setBufferSize(I2C_BUFFER_SIZE);
 
     if (!g_i2c_mux.begin())
     {
@@ -109,12 +131,13 @@ void setup()
     for (uint8_t i = 0; i < MAX_WORKERS; i++)
     {
         g_workers[i].id = 0xFF;
+        g_workers[i].recovery_attempts = 0;
+        g_workers[i].needs_health_check = true;
     }
 
     DEBUG_PRINTLN("READY - Waiting for workers...");
     DEBUG_PRINTLN("========================================");
 
-    
     delay(100);
 }
 
@@ -149,8 +172,153 @@ void scanI2CBus()
             }
         }
     }
+}
 
-    
+// ============================================================================
+// CHECK WORKER HEALTH
+// ============================================================================
+bool checkWorkerHealth(uint8_t channel)
+{
+    if (!g_i2c_mux.selectChannel(channel))
+        return false;
+
+    // Quick I2C ping
+    Wire.beginTransmission(WORKER_I2C_ADDR);
+    uint8_t result = Wire.endTransmission();
+
+    g_i2c_mux.deselectChannel(channel);
+
+    return (result == 0);
+}
+
+// ============================================================================
+// RECOVER WORKER
+// ============================================================================
+bool recoverWorker(uint8_t channel)
+{
+    if (g_workers[channel].recovery_attempts >= WORKER_RECOVERY_ATTEMPTS)
+    {
+        DEBUG_PRINTF("Worker %d: Max recovery attempts reached\n", channel);
+        return false;
+    }
+
+    uint32_t now = millis();
+    if (now - g_workers[channel].last_recovery_attempt < WORKER_RECOVERY_INTERVAL_MS)
+        return false;
+
+    g_workers[channel].last_recovery_attempt = now;
+    g_workers[channel].recovery_attempts++;
+
+    DEBUG_PRINTF("Worker %d: Recovery attempt %d/%d\n",
+                 channel, g_workers[channel].recovery_attempts, WORKER_RECOVERY_ATTEMPTS);
+
+    // Reset I2C channel
+    g_i2c_mux.deselectChannel(channel);
+    delayMicroseconds(100);
+
+    if (!g_i2c_mux.selectChannel(channel))
+        return false;
+
+    // Send config packet to re-register
+    PacketConfig cfg;
+    cfg.cmd = CMD_ASSIGN_ID;
+    cfg.assigned_id = channel;
+    cfg.reserved = 0;
+    cfg.crc = crc8_compute(&cfg, sizeof(PacketConfig) - 1);
+
+    Wire.beginTransmission(WORKER_I2C_ADDR);
+    Wire.write((uint8_t *)&cfg, sizeof(PacketConfig));
+    uint8_t result = Wire.endTransmission();
+
+    g_i2c_mux.deselectChannel(channel);
+
+    if (result == 0)
+    {
+        g_workers[channel].pending_config = true;
+        g_workers[channel].config_time = now;
+        DEBUG_PRINTF("Worker %d: Recovery config sent\n", channel);
+        return true;
+    }
+
+    return false;
+}
+
+// ============================================================================
+// SCHEDULE NEXT JOB
+// ============================================================================
+void scheduleNextJob()
+{
+    // Find next active worker in sequence
+    uint8_t start_worker = (g_last_job_worker + 1) % MAX_WORKERS;
+
+    for (uint8_t i = 0; i < MAX_WORKERS; i++)
+    {
+        uint8_t worker = (start_worker + i) % MAX_WORKERS;
+
+        if (g_workers[worker].active)
+        {
+            g_last_job_worker = worker;
+            g_job_pending = true;
+            return;
+        }
+    }
+
+    g_job_pending = false;
+}
+
+// ============================================================================
+// PROCESS JOB ASSIGNMENT (Staggered)
+// ============================================================================
+void processJobAssignment()
+{
+    if (!g_job_pending)
+        return;
+
+    uint32_t now = millis();
+
+    // Check if enough time has passed since last job
+    if (now - g_last_job_time < JOB_ASSIGNMENT_DELAY_MS)
+        return;
+
+    uint8_t worker = g_last_job_worker;
+
+// Health check before sending job
+#if WORKER_HEALTH_CHECK_BEFORE_JOB
+    if (!checkWorkerHealth(worker))
+    {
+        DEBUG_PRINTF("Worker %d: Health check failed, attempting recovery\n", worker);
+
+        if (!recoverWorker(worker))
+        {
+            // Mark worker as inactive if recovery fails
+            g_workers[worker].active = false;
+            g_workers[worker].id = 0xFF;
+            g_active_worker_count--;
+            DEBUG_PRINTF("Worker %d: Marked inactive\n", worker);
+        }
+
+        g_job_pending = false;
+        scheduleNextJob();
+        return;
+    }
+#endif
+
+    // Send job to worker
+    if (sendJobToWorker(worker, worker))
+    {
+        g_last_job_time = now;
+        g_job_pending = false;
+        DEBUG_PRINTF("Job %d sent to Worker %d\n", g_job_id, worker);
+
+        // Schedule next worker
+        scheduleNextJob();
+    }
+    else
+    {
+        DEBUG_PRINTF("Worker %d: Job send failed\n", worker);
+        g_job_pending = false;
+        scheduleNextJob();
+    }
 }
 
 // ============================================================================
@@ -160,14 +328,16 @@ void loop()
 {
     static uint32_t last_poll = 0;
     static uint32_t last_status = 0;
-    static uint32_t last_job = 0;
+    static uint32_t last_job_trigger = 0;
     uint32_t now = millis();
 
+    // Process all workers for incoming data
     for (uint8_t i = 0; i < MAX_WORKERS; i++)
     {
         processWorkerData(i);
     }
 
+    // Periodic maintenance
     if (now - last_poll >= POLL_INTERVAL_MS)
     {
         last_poll = now;
@@ -177,32 +347,32 @@ void loop()
         LED.update();
     }
 
-    if (now - last_job >= 5000 && g_active_worker_count > 0)
+    // Trigger new job cycle every 5 seconds
+    if (now - last_job_trigger >= 5000 && g_active_worker_count > 0)
     {
-        last_job = now;
+        last_job_trigger = now;
         g_job_id++;
 
+        // Generate new block header
         for (int i = 0; i < 76; i++)
         {
             g_block_header[i] = random(0, 255);
         }
 
-        for (uint8_t i = 0; i < MAX_WORKERS; i++)
-        {
-            if (g_workers[i].active)
-            {
-                sendJobToWorker(i, i);
-            }
-        }
+        // Start staggered job assignment
+        scheduleNextJob();
 
-        DEBUG_PRINTF("Job %d sent\n", g_job_id);
+        DEBUG_PRINTF("Job %d cycle started\n", g_job_id);
     }
 
+    // Process staggered job assignments
+    processJobAssignment();
+
+    // Status print
     if (now - last_status >= 10000)
     {
         last_status = now;
         printStatus();
-        
     }
 
     delay(10);
@@ -258,13 +428,14 @@ void updateLEDStatus()
 }
 
 // ============================================================================
-// READ WORKER DATA
+// READ WORKER DATA (Optimized)
 // ============================================================================
 bool readWorkerData(uint8_t channel, uint8_t *buffer, uint8_t *len)
 {
     if (!g_i2c_mux.selectChannel(channel))
         return false;
 
+    // Single transaction to get status
     Wire.beginTransmission(WORKER_I2C_ADDR);
     if (Wire.endTransmission() != 0)
     {
@@ -272,7 +443,7 @@ bool readWorkerData(uint8_t channel, uint8_t *buffer, uint8_t *len)
         return false;
     }
 
-    delayMicroseconds(100);
+    delayMicroseconds(50);
     Wire.requestFrom(WORKER_I2C_ADDR, 1);
 
     if (!Wire.available())
@@ -289,6 +460,7 @@ bool readWorkerData(uint8_t channel, uint8_t *buffer, uint8_t *len)
         return false;
     }
 
+    // Get data length
     Wire.beginTransmission(WORKER_I2C_ADDR);
     if (Wire.endTransmission() != 0)
     {
@@ -296,7 +468,7 @@ bool readWorkerData(uint8_t channel, uint8_t *buffer, uint8_t *len)
         return false;
     }
 
-    delayMicroseconds(100);
+    delayMicroseconds(50);
     Wire.requestFrom(WORKER_I2C_ADDR, 1);
 
     if (!Wire.available())
@@ -307,12 +479,13 @@ bool readWorkerData(uint8_t channel, uint8_t *buffer, uint8_t *len)
 
     uint8_t dataLen = Wire.read();
 
-    if (dataLen == 0)
+    if (dataLen == 0 || dataLen > I2C_BUFFER_SIZE)
     {
         g_i2c_mux.deselectChannel(channel);
         return false;
     }
 
+    // Read data
     Wire.beginTransmission(WORKER_I2C_ADDR);
     if (Wire.endTransmission() != 0)
     {
@@ -320,7 +493,7 @@ bool readWorkerData(uint8_t channel, uint8_t *buffer, uint8_t *len)
         return false;
     }
 
-    delayMicroseconds(100);
+    delayMicroseconds(50);
     Wire.requestFrom(WORKER_I2C_ADDR, (int)dataLen);
 
     uint8_t received = 0;
@@ -364,7 +537,7 @@ void processWorkerData(uint8_t channel)
             }
 
             g_i2c_mux.deselectChannel(channel);
-            delayMicroseconds(100);
+            delayMicroseconds(50);
         }
         return;
     }
@@ -386,6 +559,8 @@ void processWorkerData(uint8_t channel)
             g_workers[slot].last_hash_time = millis();
             g_workers[slot].pending_config = true;
             g_workers[slot].config_time = millis();
+            g_workers[slot].recovery_attempts = 0;
+            g_workers[slot].needs_health_check = false;
             g_active_worker_count++;
             DEBUG_PRINTF("Worker %d connected\n", slot);
         }
@@ -400,6 +575,7 @@ void processWorkerData(uint8_t channel)
             g_workers[wid].last_seen = millis();
             g_workers[wid].hashes_processed = p->hash_count;
             g_workers[wid].last_job_sent = 0;
+            g_workers[wid].recovery_attempts = 0; // Reset on successful communication
 
             if (p->nonce != 0xFFFFFFFF)
             {
@@ -422,12 +598,15 @@ void processWorkerData(uint8_t channel)
 }
 
 // ============================================================================
-// SEND JOB TO WORKER
+// SEND JOB TO WORKER (Optimized)
 // ============================================================================
-void sendJobToWorker(uint8_t channel, uint8_t worker_id)
+bool sendJobToWorker(uint8_t channel, uint8_t worker_id)
 {
-    if (worker_id >= MAX_WORKERS || !g_i2c_mux.selectChannel(channel))
-        return;
+    if (worker_id >= MAX_WORKERS)
+        return false;
+
+    if (!g_i2c_mux.selectChannel(channel))
+        return false;
 
     PacketJob job;
     job.cmd = CMD_JOB;
@@ -440,15 +619,22 @@ void sendJobToWorker(uint8_t channel, uint8_t worker_id)
     memcpy(job.header, g_block_header, 76);
     job.crc = crc8_compute(&job, sizeof(PacketJob) - 1);
 
+    // Single optimized transmission
     Wire.beginTransmission(WORKER_I2C_ADDR);
     Wire.write(sizeof(PacketJob));
     Wire.write((uint8_t *)&job, sizeof(PacketJob));
-    Wire.endTransmission();
-
-    g_workers[worker_id].last_job_sent = millis();
-    g_workers[worker_id].last_job_id = g_job_id;
+    uint8_t result = Wire.endTransmission();
 
     g_i2c_mux.deselectChannel(channel);
+
+    if (result == 0)
+    {
+        g_workers[worker_id].last_job_sent = millis();
+        g_workers[worker_id].last_job_id = g_job_id;
+        return true;
+    }
+
+    return false;
 }
 
 // ============================================================================
@@ -464,13 +650,21 @@ void cleanupStaleWorkers()
         if (!g_workers[i].active)
             continue;
 
-        // FIX: Increased timeout
-        if (now - g_workers[i].last_seen > (HEARTBEAT_TIMEOUT_MS * 2))
+        // Attempt recovery before marking dead
+        if (now - g_workers[i].last_seen > HEARTBEAT_TIMEOUT_MS)
         {
-            DEBUG_PRINTF("Worker %d timeout\n", i);
-            g_workers[i].active = false;
-            g_workers[i].id = 0xFF;
-            g_active_worker_count--;
+            if (g_workers[i].recovery_attempts < WORKER_RECOVERY_ATTEMPTS)
+            {
+                recoverWorker(i);
+            }
+            else
+            {
+                DEBUG_PRINTF("Worker %d: Timeout after %d recovery attempts\n",
+                             i, g_workers[i].recovery_attempts);
+                g_workers[i].active = false;
+                g_workers[i].id = 0xFF;
+                g_active_worker_count--;
+            }
         }
     }
 }
@@ -536,9 +730,23 @@ int findWorkerSlot()
 // ============================================================================
 void printStatus()
 {
-    DEBUG_PRINTF("Workers: %d/%d, Hashrate: %.1f H/s, Shares: %d/%d\n",
+    DEBUG_PRINTF("Workers: %d/%d, Hashrate: %.1f H/s, Shares: %d/%d, Job Delay: %dms\n",
                  g_active_worker_count, MAX_WORKERS,
-                 calculateTotalHashrate(), g_total_accepted, g_total_submitted);
+                 calculateTotalHashrate(), g_total_accepted, g_total_submitted,
+                 JOB_ASSIGNMENT_DELAY_MS);
+
+    // Print individual worker status
+    for (uint8_t i = 0; i < MAX_WORKERS; i++)
+    {
+        if (g_workers[i].active)
+        {
+            DEBUG_PRINTF("  W%d: %.1f H/s, %d/%d shares, %d recovery attempts\n",
+                         i, g_workers[i].hashrate,
+                         g_workers[i].shares_accepted,
+                         g_workers[i].shares_submitted,
+                         g_workers[i].recovery_attempts);
+        }
+    }
 }
 
 #endif // MASTER_DEVICE

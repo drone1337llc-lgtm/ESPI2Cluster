@@ -40,7 +40,7 @@ static volatile uint32_t g_sw_nonce_end = 0;
 static volatile bool g_hw_has_job = false;
 static volatile bool g_sw_has_job = false;
 
-static uint8_t g_tx_buffer[256];
+static uint8_t g_tx_buffer[I2C_BUFFER_SIZE];
 static uint8_t g_tx_len = 0;
 static volatile bool g_tx_pending = false;
 static volatile bool g_data_ready = false;
@@ -53,9 +53,11 @@ static uint8_t g_hello_retry_count = 0;
 #define HELLO_RETRY_INTERVAL_MS 1000
 #define HELLO_MAX_RETRIES 10
 
-// FIX: Result reporting timer (separate from mining)
 static uint32_t g_last_result_time = 0;
-#define RESULT_REPORT_INTERVAL_MS 2000 // Report every 2 seconds
+#define RESULT_REPORT_INTERVAL_MS 2000
+
+static uint32_t g_last_communication_time = 0;
+#define COMMUNICATION_TIMEOUT_MS 30000
 
 static portMUX_TYPE g_hash_mutex = portMUX_INITIALIZER_UNLOCKED;
 static portMUX_TYPE g_job_mutex = portMUX_INITIALIZER_UNLOCKED;
@@ -66,7 +68,8 @@ void handleIncomingPacket(uint8_t *data, uint8_t len);
 void prepareTransmission(uint8_t *data, uint8_t len);
 void sendHelloPacket();
 void updateStatusByte();
-void sendResultPacket(); // FIX: New function
+void sendResultPacket();
+void checkCommunicationTimeout();
 
 void updateStatusByte()
 {
@@ -85,6 +88,7 @@ void updateStatusByte()
 void onRequest()
 {
     updateStatusByte();
+    g_last_communication_time = millis();
 
     switch (g_i2c_state)
     {
@@ -129,10 +133,12 @@ void onRequest()
 
 void onReceive(int len)
 {
-    static uint8_t rx_buffer[256];
+    static uint8_t rx_buffer[I2C_BUFFER_SIZE];
     int rx_len = 0;
 
-    while (Wire.available() && rx_len < 256)
+    g_last_communication_time = millis();
+
+    while (Wire.available() && rx_len < I2C_BUFFER_SIZE)
     {
         rx_buffer[rx_len++] = Wire.read();
     }
@@ -170,7 +176,6 @@ void sendHelloPacket()
     DEBUG_PRINTF("Hello sent (attempt %d)\n", g_hello_retry_count);
 }
 
-// FIX: Send result packet even if no nonce found (keeps connection alive)
 void sendResultPacket()
 {
     if (!g_is_registered)
@@ -183,7 +188,6 @@ void sendResultPacket()
     g_found_nonce = 0xFFFFFFFF;
     taskEXIT_CRITICAL(&g_hash_mutex);
 
-    // Always send results if we have ANY hash count or a found nonce
     if (hashes > 0 || nonce != 0xFFFFFFFF)
     {
         PacketResult res;
@@ -200,16 +204,39 @@ void sendResultPacket()
     }
 }
 
+void checkCommunicationTimeout()
+{
+    uint32_t now = millis();
+
+    if (g_is_registered)
+    {
+        if (now - g_last_communication_time > COMMUNICATION_TIMEOUT_MS)
+        {
+            DEBUG_PRINTLN("[WORKER] Communication timeout - re-registering");
+            g_is_registered = false;
+            g_hello_retry_count = 0;
+            LED.setPattern(LED_CONNECTING);
+        }
+    }
+}
+
 void setup()
 {
+    // MAXIMIZE SERIAL BUFFERS
+    Serial.setRxBufferSize(SERIAL_RX_BUFFER_SIZE);
+    Serial.setTxBufferSize(SERIAL_TX_BUFFER_SIZE);
     Serial.begin(115200);
     delay(2000);
 
     DEBUG_PRINTLN("========================================");
-    DEBUG_PRINTLN("ESP32 MINING WORKER");
+    DEBUG_PRINTLN("ESP32 MINING WORKER - OPTIMIZED");
     DEBUG_PRINTLN("========================================");
     DEBUG_PRINTF("I2C Address: 0x%02X\n", I2C_SLAVE_ADDR);
+    DEBUG_PRINTF("I2C Buffer: %d bytes\n", I2C_BUFFER_SIZE);
+    DEBUG_PRINTF("Serial Buffer: %d bytes\n", SERIAL_RX_BUFFER_SIZE);
 
+    // Initialize I2C with maximum buffer
+    Wire.setBufferSize(I2C_BUFFER_SIZE);
     Wire.begin(I2C_SLAVE_ADDR);
     Wire.onRequest(onRequest);
     Wire.onReceive(onReceive);
@@ -229,6 +256,7 @@ void setup()
     xTaskCreatePinnedToCore(miningTaskHW, "MinerHW", MINING_STACK_SIZE, NULL, 5, NULL, 0);
     xTaskCreatePinnedToCore(miningTaskSW, "MinerSW", MINING_STACK_SIZE, NULL, 4, NULL, 1);
 
+    g_last_communication_time = millis();
     sendHelloPacket();
 
     DEBUG_PRINTLN("Waiting for master assignment...");
@@ -254,17 +282,20 @@ void loop()
                 DEBUG_PRINTLN("[WORKER] Max hello retries - check master");
                 LED.setPattern(LED_ERROR);
                 g_hello_retry_count = 0;
+                g_last_hello_time = now;
             }
         }
     }
     else
     {
-        // FIX: Send periodic results while mining (keeps connection alive)
         if (now - g_last_result_time >= RESULT_REPORT_INTERVAL_MS)
         {
             g_last_result_time = now;
             sendResultPacket();
         }
+
+        // Check for communication timeout
+        checkCommunicationTimeout();
     }
 
     LED.update();
@@ -286,6 +317,7 @@ void handleIncomingPacket(uint8_t *data, uint8_t len)
             g_worker_id = cfg->assigned_id;
             g_is_registered = true;
             g_hello_retry_count = 0;
+            g_last_communication_time = millis();
 
             DEBUG_PRINTF("Assigned ID: %d\n", g_worker_id);
             DEBUG_PRINTLN("[WORKER] Registered!");
@@ -333,15 +365,15 @@ void handleIncomingPacket(uint8_t *data, uint8_t len)
             DEBUG_PRINTF("Job %d received\n", job->job_id);
             LED.setPattern(LED_MINING_ACTIVE);
 
-            // FIX: Reset result timer on new job
             g_last_result_time = millis();
+            g_last_communication_time = millis();
         }
     }
 }
 
 void prepareTransmission(uint8_t *data, uint8_t len)
 {
-    if (len > 0)
+    if (len > 0 && len <= I2C_BUFFER_SIZE)
     {
         memcpy(g_tx_buffer, data, len);
         g_tx_len = len;

@@ -1,4 +1,5 @@
-
+// Author : Sergio WIlliams
+// GPL - 3.0 - or -later
 
 #ifndef SHA256_OPTIMIZED_H
 #define SHA256_OPTIMIZED_H
